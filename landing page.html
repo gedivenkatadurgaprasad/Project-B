@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    h1{
+        text-align: center;
+        display: block;
+        background-color: orange;
+        color: aliceblue;
+        animation: slideIn 2s ease-in-out;
+    }
+    h2{
+      animation: fadeIn 5s;
+    }
+    .p1{
+        text-align: center;
+        display: block;
+    }
+    body{
+        background-color: blanchedalmond;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    img{
+        height: 300px;
+        width:300px;
+        transition: transform 0.3s;
+        border-radius: 10px;
+        border: solid white;
+    }
+    img:hover{
+      transform: scale(1.1);
+    }
+    .logo{
+       border-radius: 30px;
+       height:50px;
+       width:50px;
+       float: left;
+       margin-left: 1.5px;
+    }
+    footer{
+      background-color: orange;
+      color: white;
+      text-align: center;
+      font-family: cursive;
+      animation:slideIn 2s ease-in-out
+    }
+    .buy-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e64a19;
+}
+details{
+  display: inline-block;
+    width: 83%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+details:hover{
+  transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 200, 255);
+}
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Welcome to Our Website</h1>
+        <p class="p1" style="color: rgb(134, 134, 233) ;animation:fadeIn 5s;">Discover our amazing features</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 feature">
+        <h2>Product 1 <br> Laptop</h2>
+        <br>
+        <img src="images/lap1.gif" style="animation:fadeIn 5s;">
+        <br>
+        <br>
+        <details>
+          <summary>Description of feature 1</summary>
+          <p style="font-family: cursive;color: grey;">Welcome<br>
+            This is our latest laptop launched on 29 Jun
+
+          </p>
+           <button class="buy-button">Buy Now</button>
+        </details>
+       </div>
+
+      <div class="col-md-4 feature">
+        <h2>Product 2 <br> Mobie</h2>
+        <br>
+        <img src="images/mobile.gif" style="animation: fadeIn 5s;">
+        <br>
+        <br>
+        <details>
+          <summary>Description of feature 2</summary>
+          <p style="font-family: cursive;color: grey;">Welcome<br>
+            This is our latest Mobile phone launched on 29 Jun
+          </p>
+           <button class="buy-button">Buy Now</button>
+        </details>
+      </div>
+
+      <div class="col-md-4 feature">
+        <h2>Product 3 <br> Watch</h2>
+        <br>
+        <img src="images/watch.gif" style="animation: fadeIn 5s;">
+        <br>
+        <br>
+        <details>
+          <summary>Description of feature 2</summary>
+          <p style="font-family: cursive;color: grey;">Welcome<br>
+            This is our latest Watch launched on 29 Jun
+          </p>
+           <button class="buy-button">Buy Now</button>
+        </details>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>Contact us through <a href="mailto:gedivenkatadurgaprasad@gmail.com">Mail</a></p>
+  </footer>
+</body>
+</html>
